@@ -6,17 +6,11 @@ public class Buttons : MonoBehaviour
 {
     [SerializeField] private TMP_Text textPanelButtons;
     [SerializeField] private Button[] buttons;
-    private string newTextPanelButtons;
+    private string[] newTextPanelButtons = { "One Clicked" , "Two Clicked"};
 
-    public void OneButton()
+    public void TextButtons(int index)
     {
-        newTextPanelButtons = "One Clicked";
-        textPanelButtons.text = newTextPanelButtons;
-    }
-    public void TwoButton()
-    {
-        newTextPanelButtons = "Two Clicked";
-        textPanelButtons.text = newTextPanelButtons;
+        textPanelButtons.text = newTextPanelButtons[index];
     }
     public void DisableButton()
     {
