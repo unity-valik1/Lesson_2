@@ -9,7 +9,11 @@ public class Toggle : MonoBehaviour
 
     public void ToggleButtons(int index)
     {
-        if(index == 0)
+
+        //
+
+        textPanelToggle.text = textToggle[index].text;
+        /*if (index == 0)
         {
             textPanelToggle.text = textToggle[0].text;
         }
@@ -20,6 +24,6 @@ public class Toggle : MonoBehaviour
         else
         {
             textPanelToggle.text = textToggle[2].text;
-        }
+        }*/
     }
 }
